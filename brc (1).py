@@ -1,12 +1,10 @@
-
 import numpy as np
 from PIL import Image
-import tensorflow as tf
+from tflite_runtime.interpreter import Interpreter
 
-# ✅ Load TFLite interpreter from TensorFlow
-Interpreter = tf.lite.Interpreter
 interpreter = Interpreter(model_path="model.tflite")
 interpreter.allocate_tensors()
+
 
 
 
