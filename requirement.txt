@@ -1,8 +1,8 @@
 streamlit
+tensorflow
+tflite-runtime
 numpy
 pillow
 scikit-learn
-opencv-python-headless
+opencv-python
 matplotlib
-tensorflow==2.14.0
-
