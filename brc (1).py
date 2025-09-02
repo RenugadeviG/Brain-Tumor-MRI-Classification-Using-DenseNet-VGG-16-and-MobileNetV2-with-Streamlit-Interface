@@ -2,9 +2,8 @@
 import numpy as np
 from PIL import Image
 
-
-
-from tensorflow.lite import Interpreter
+# ✅ Use TFLite Runtime
+from tflite_runtime.interpreter import Interpreter
 
 
 
