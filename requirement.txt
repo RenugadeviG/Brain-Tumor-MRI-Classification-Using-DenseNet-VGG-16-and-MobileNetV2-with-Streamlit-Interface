@@ -2,6 +2,6 @@ streamlit
 numpy
 pillow
 scikit-learn
-opencv-python
+opencv-python-headless
 matplotlib
-tflite-runtime==2.14.0
+https://github.com/google-coral/pycoral/releases/download/release-frogfish/tflite_runtime-2.14.0-cp310-cp310-manylinux2014_x86_64.whl
