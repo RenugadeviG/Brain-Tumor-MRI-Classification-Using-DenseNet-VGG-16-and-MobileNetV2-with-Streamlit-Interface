@@ -1,25 +1,15 @@
 
 import numpy as np
 from PIL import Image
+import tensorflow as tf
 
-try:
-    # Try tflite-runtime (lightweight)
-    from tflite_runtime.interpreter import Interpreter
-except ImportError:
-    try:
-        # Try TensorFlow's TFLite
-        from tensorflow.lite import Interpreter
-    except ImportError:
-        # Last fallback: use tflite-support
-        from tflite_support import flatbuffers
-        from tflite_support import metadata
-        raise ImportError("No valid TFLite interpreter found. Please ensure tflite-runtime or tensorflow is installed.")
-
-
-
-# Load TFLite model
+# ✅ Load TFLite interpreter from TensorFlow
+Interpreter = tf.lite.Interpreter
 interpreter = Interpreter(model_path="model.tflite")
 interpreter.allocate_tensors()
+
+
+
 
 # Get input/output details
 input_details = interpreter.get_input_details()
