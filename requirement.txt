@@ -1,0 +1,7 @@
+streamlit
+tflite-runtime
+numpy
+pillow
+scikit-learn
+opencv-python
+matplotlib
