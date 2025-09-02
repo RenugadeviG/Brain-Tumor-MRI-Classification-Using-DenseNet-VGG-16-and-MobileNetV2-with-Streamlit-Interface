@@ -3,9 +3,11 @@
 
 # ✅ Use TensorFlow Lite runtime
 import numpy as np
+from PIL import Image
+
+# ✅ Correct import for TensorFlow 2.14
 from tensorflow.lite import Interpreter
 
-from PIL import Image
 
 # Load TFLite model
 interpreter = Interpreter(model_path="model.tflite")
