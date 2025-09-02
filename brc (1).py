@@ -2,17 +2,7 @@
 import numpy as np
 from PIL import Image
 
-# ✅ Universal Import (works with both TensorFlow & TFLite Runtime)
-try:
-    from tflite_runtime.interpreter import Interpreter
-except ImportError:
-    try:
-        from tensorflow.lite import Interpreter
-    except ImportError as e:
-        raise ImportError(
-            "Neither tflite-runtime nor tensorflow.lite is available. "
-            "Please install one of them in requirements.txt"
-        )
+
 from tflite_runtime.interpreter import Interpreter
 from tensorflow.lite import Interpreter
 
