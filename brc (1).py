@@ -14,6 +14,7 @@ except ImportError:
             "Please install one of them in requirements.txt"
         )
 from tflite_runtime.interpreter import Interpreter
+from tensorflow.lite import Interpreter
 
 
 
