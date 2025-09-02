@@ -13,6 +13,8 @@ except ImportError:
             "Neither tflite-runtime nor tensorflow.lite is available. "
             "Please install one of them in requirements.txt"
         )
+from tflite_runtime.interpreter import Interpreter
+
 
 
 
