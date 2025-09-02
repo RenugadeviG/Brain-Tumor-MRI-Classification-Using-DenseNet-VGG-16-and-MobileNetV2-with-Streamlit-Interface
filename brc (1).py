@@ -3,7 +3,7 @@
 
 # ✅ Use TensorFlow Lite runtime
 import numpy as np
-from tensorflow.lite.python.interpreter import Interpreter
+from tflite_runtime.interpreter import Interpreter
 from PIL import Image
 
 # Load TFLite model
