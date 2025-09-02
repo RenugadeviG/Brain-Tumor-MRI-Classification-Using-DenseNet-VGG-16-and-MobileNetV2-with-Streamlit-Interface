@@ -3,7 +3,7 @@ import numpy as np
 from PIL import Image
 
 
-from tflite_runtime.interpreter import Interpreter
+
 from tensorflow.lite import Interpreter
 
 
