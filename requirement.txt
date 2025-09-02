@@ -4,4 +4,5 @@ pillow
 scikit-learn
 opencv-python
 matplotlib
-tflite-runtime==2.14.0
+tensorflow==2.14.0
+
